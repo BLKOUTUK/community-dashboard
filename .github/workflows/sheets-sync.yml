@@ -4,8 +4,6 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
-  schedule:
-    - cron: '0 */60 * * *'  # Run every 6 hours
   repository_dispatch:
     types: [database_changes]
 
